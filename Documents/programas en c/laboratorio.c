@@ -16,7 +16,12 @@
 #include <conio.h>
 #include <time.h>
 
-int i, n, n1, aleatorio, P=1, U=10;
+int i
+int n
+int n1
+int aleatorio
+int P=1
+int U=10;
 char txt[50];
 
 int generar();
@@ -24,8 +29,8 @@ int generar();
 
 int generar(){
 	
-for(n=0;(txt[n]=getchar()) != '\n';++n); 
-txt[n]='\0'; 
+	for(n=0;(txt[n]=getchar()) != '\n';++n); 
+	txt[n]='\0'; 
 
 	
 }
@@ -34,12 +39,12 @@ int codificar ();
 	/**Generación de número al azar por letra introducida*/
 
 int codificar(){
-srand(time(NULL));
-for (i = 0; i < n; i ++) 
+	srand(time(NULL));
+	for (i = 0; i < n; i ++) 
 
 {
-aleatorio = P+(int)(((U-P+1.0)*rand())/(RAND_MAX+1.0));
-printf("%d ", aleatorio);
+	aleatorio = P+(int)(((U-P+1.0)*rand())/(RAND_MAX+1.0));
+	printf("%d ", aleatorio);
 }
 	
 	
@@ -47,20 +52,20 @@ printf("%d ", aleatorio);
 /** Funcion principal del programa*/
 int main()
 { 
-printf("*--------------------------------------*\n");
-printf("*   PROGRAMA PARA CODIFICAR FRASES     *\n");
-printf("*--------------------------------------*\n");
+	printf("*--------------------------------------*\n");
+	printf("*   PROGRAMA PARA CODIFICAR FRASES     *\n");
+	printf("*--------------------------------------*\n");
 
-printf("Por favor Ingrese una frase:\n"); 
+	printf("Por favor Ingrese una frase:\n"); 
 
 generar();
-printf("*--------------------------------------*\n");
-printf("+ La frase %s tiene %d caracteres.       +\n",txt,n); 
-printf("*--------------------------------------*\n");
+	printf("*--------------------------------------*\n");
+	printf("+ La frase %s tiene %d caracteres.       +\n",txt,n); 
+	printf("*--------------------------------------*\n");
 
-printf("*...........................................*\n");
-printf("La generacion aleatoria de codificacion es:\n ");
-printf("*...........................................*\n");
+	printf("*...........................................*\n");
+	printf("La generacion aleatoria de codificacion es:\n ");
+	printf("*...........................................*\n");
 
 
 codificar();
