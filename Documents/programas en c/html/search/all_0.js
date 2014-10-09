@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['laboratorio_2ec',['laboratorio.c',['../laboratorio_8c.html',1,'']]]
+  ['codificar',['codificar',['../laboratorio_8c.html#abe0ec56035fb2e735aabce162a9884d5',1,'laboratorio.c']]]
 ];

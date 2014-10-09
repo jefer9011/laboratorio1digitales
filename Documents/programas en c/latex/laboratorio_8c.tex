@@ -1,49 +1,104 @@
-\section{laboratorio.\+c File Reference}
+\hypertarget{laboratorio_8c}{\section{laboratorio.\+c File Reference}
 \label{laboratorio_8c}\index{laboratorio.\+c@{laboratorio.\+c}}
+}
 
 
-main funcion principal para definir variables y operaciones  
+funcion principal para definir variables y operaciones  
 
 
-{\ttfamily \#include $<$conio.\+h$>$}\\*
 {\ttfamily \#include $<$stdio.\+h$>$}\\*
 {\ttfamily \#include $<$stdlib.\+h$>$}\\*
-\subsection*{Macros}
-\begin{DoxyCompactItemize}
-\item 
-\#define {\bfseries n}~10\label{laboratorio_8c_ad5228cd48403ef9d8b632f5c7c124720}
-
-\end{DoxyCompactItemize}
+{\ttfamily \#include $<$conio.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int {\bfseries main} (int argc, char $\ast$argv[$\,$])\label{laboratorio_8c_a0ddf1224851353fc92bfbff6f499fa97}
+int \hyperlink{laboratorio_8c_a1e1803371fcf9465f938674a0da60d0c}{generar} ()
+\item 
+int \hyperlink{laboratorio_8c_abe0ec56035fb2e735aabce162a9884d5}{codificar} ()
+\item 
+int \hyperlink{laboratorio_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{laboratorio_8c_acb559820d9ca11295b4500f179ef6392}{int {\bfseries i}}\label{laboratorio_8c_acb559820d9ca11295b4500f179ef6392}
+
+\item 
+\hypertarget{laboratorio_8c_a76f11d9a0a47b94f72c2d0e77fb32240}{int {\bfseries n}}\label{laboratorio_8c_a76f11d9a0a47b94f72c2d0e77fb32240}
+
+\item 
+\hypertarget{laboratorio_8c_acf4b6cea27655a9d2012c09c64d6ca9e}{int {\bfseries n1}}\label{laboratorio_8c_acf4b6cea27655a9d2012c09c64d6ca9e}
+
+\item 
+\hypertarget{laboratorio_8c_a26175723dbc3590e7dde23400c94f9a5}{int {\bfseries aleatorio}}\label{laboratorio_8c_a26175723dbc3590e7dde23400c94f9a5}
+
+\item 
+\hypertarget{laboratorio_8c_aef94be98e2c9e4a4dece75f60ca9792c}{int {\bfseries P} =1}\label{laboratorio_8c_aef94be98e2c9e4a4dece75f60ca9792c}
+
+\item 
+\hypertarget{laboratorio_8c_a90e7b1bac1c236732d497150bd79533c}{int {\bfseries U} =10}\label{laboratorio_8c_a90e7b1bac1c236732d497150bd79533c}
+
+\item 
+\hypertarget{laboratorio_8c_ad129398bb71e046b705d05230247c2aa}{char {\bfseries txt} \mbox{[}50\mbox{]}}\label{laboratorio_8c_ad129398bb71e046b705d05230247c2aa}
 
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-main funcion principal para definir variables y operaciones 
+funcion principal para definir variables y operaciones 
 
 \begin{DoxyAuthor}{Author}
 Jeferson Grueso, Daniel Escamilla, Santiago Moreno  03 Septiembre 2014 
 \end{DoxyAuthor}
 
 \begin{DoxyParams}{Parameters}
-{\em argc,chat$\ast$} & argv[] \\
+{\em argc,chat$\ast$} & argv\mbox{[}\mbox{]} \\
 \hline
-{\em a,Vector} & A muestra y una serie de caracteres predefinidos \\
+{\em txt,Vector} & A muestra y una serie de caracteres predefinidos \\
 \hline
-{\em b,Vector} & B muestra una serie de caracteres predefinidos \\
+{\em aleatorio,Variable} & para generar numeros de codificacion \\
 \hline
-{\em C,Vectir} & que muestra los números sin repetir de A y B \\
-\hline
-{\em D} & Vector que muestra los numeros repetidos de A y B \\
-\hline
-{\em n,es} & el número \\
+{\em txt,vector} & que guarda la frase introducida \\
 \hline
 \end{DoxyParams}
 
 
-Definition in file {\bf laboratorio.\+c}.
+Definition in file \hyperlink{laboratorio_8c_source}{laboratorio.\+c}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{laboratorio_8c_abe0ec56035fb2e735aabce162a9884d5}{\index{laboratorio.\+c@{laboratorio.\+c}!codificar@{codificar}}
+\index{codificar@{codificar}!laboratorio.\+c@{laboratorio.\+c}}
+\subsubsection[{codificar}]{\setlength{\rightskip}{0pt plus 5cm}int codificar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{laboratorio_8c_abe0ec56035fb2e735aabce162a9884d5}
+Generación de número al azar por letra introducida 
+
+Definition at line 36 of file laboratorio.\+c.
+
+\hypertarget{laboratorio_8c_a1e1803371fcf9465f938674a0da60d0c}{\index{laboratorio.\+c@{laboratorio.\+c}!generar@{generar}}
+\index{generar@{generar}!laboratorio.\+c@{laboratorio.\+c}}
+\subsubsection[{generar}]{\setlength{\rightskip}{0pt plus 5cm}int generar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{laboratorio_8c_a1e1803371fcf9465f938674a0da60d0c}
+Petición y contador de caracteres de frase a codificar 
+
+Definition at line 25 of file laboratorio.\+c.
+
+\hypertarget{laboratorio_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{laboratorio.\+c@{laboratorio.\+c}!main@{main}}
+\index{main@{main}!laboratorio.\+c@{laboratorio.\+c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{laboratorio_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+Funcion principal del programa 
+
+Definition at line 48 of file laboratorio.\+c.
 
