@@ -16,13 +16,13 @@ mimimimmimimimipirrripipipipippiuuuu
 #include <conio.h>
 #include <time.h>
 
-int i
-int n
-int n1
-int aleatorio
-int P=1
+int i;			//Variable de contador
+int n;			//Variable de contador
+int n1;			//Variable de contador
+int aleatorio;  //Variable para generar 
+int P=1;		
 int U=10;
-char txt[50];
+char txt[50];	//Vector para guardar la palabra ingresada
 
 int generar();
 /**Petición y contador de caracteres de frase a codificar*/
