@@ -10,11 +10,11 @@
 Algnuas modificciones hehcas
 mimimimmimimimipirrripipipipippiuuuu
 */
-
+//Librearias necesarias
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
-#include <time.h>
+#include <time.h>	//Librearia para funcion srand (datos aleatorio)
 
 int i;			//Variable de contador
 int n;			//Variable de contador
@@ -39,33 +39,33 @@ int codificar ();
 	/**Generación de número al azar por letra introducida*/
 
 int codificar(){
-		srand(time(NULL));
-		for (i = 0; i < n; i ++) 
+	    	srand(time(NULL)); //funciona para general datos aleatorios
+		    for (i = 0; i < n; i ++) 	//for que asigna posiciones en vector
 
 {
-	aleatorio = P+(int)(((U-P+1.0)*rand())/(RAND_MAX+1.0));
-	printf("%d ", aleatorio);
+	 		aleatorio = P+(int)(((U-P+1.0)*rand())/(RAND_MAX+1.0)); //Variables para asignar valor a  posiciones
+			printf("%d ", aleatorio);  //impresion de valor aleatorio
 }
 	
 	
 }
 /** Funcion principal del programa*/
 int main()
-{ 
-	printf("*--------------------------------------*\n");
-	printf("*   PROGRAMA PARA CODIFICAR FRASES     *\n");
-	printf("*--------------------------------------*\n");
+{ //Impresión de estructura para visualizar resultados obtenidos
+			printf("*--------------------------------------*\n");
+			printf("*   PROGRAMA PARA CODIFICAR FRASES     *\n");
+			printf("*--------------------------------------*\n");
 
-	printf("Por favor Ingrese una frase:\n"); 
+			printf("Por favor Ingrese una frase:\n"); 
 
 generar();
-	printf("*--------------------------------------*\n");
-	printf("+ La frase %s tiene %d caracteres.       +\n",txt,n); 
-	printf("*--------------------------------------*\n");
+			printf("*--------------------------------------*\n");
+			printf("+ La frase %s tiene %d caracteres.       +\n",txt,n); 
+			printf("*--------------------------------------*\n");
 
-	printf("*...........................................*\n");
-	printf("La generacion aleatoria de codificacion es:\n ");
-	printf("*...........................................*\n");
+			printf("*...........................................*\n");
+			printf("La generacion aleatoria de codificacion es:\n ");
+			printf("*...........................................*\n");
 
 
 codificar();
