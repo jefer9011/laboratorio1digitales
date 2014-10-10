@@ -6,6 +6,7 @@
 
 This file implements the huffman code calculator
 
+arroz con papas
 */
 
 #include "huffman.h"

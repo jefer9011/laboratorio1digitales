@@ -7,8 +7,8 @@
 @param txt, Vector A muestra y una serie de caracteres predefinidos
 @param aleatorio, 		Variable para generar numeros de codificacion
 @param txt, 		vector que guarda la frase introducida
-
-
+Algnuas modificciones hehcas
+mimimimmimimimipirrripipipipippiuuuu
 */
 
 #include <stdio.h>
@@ -39,8 +39,8 @@ int codificar ();
 	/**Generación de número al azar por letra introducida*/
 
 int codificar(){
-	srand(time(NULL));
-	for (i = 0; i < n; i ++) 
+		srand(time(NULL));
+		for (i = 0; i < n; i ++) 
 
 {
 	aleatorio = P+(int)(((U-P+1.0)*rand())/(RAND_MAX+1.0));
